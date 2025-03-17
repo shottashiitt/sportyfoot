@@ -1,0 +1,46 @@
+@import url('./matchs.css');
+
+* {	
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+nav ul {    
+    display: flex;
+    list-style: none;
+    gap: 1vw;
+    position: fixed;
+}
+
+nav li {
+    padding: 0.5vw;
+    transition: all 0.07s ease-in-out;
+}
+
+nav ul li:hover {
+    background: rgb(13, 79, 167);
+    border-radius: 0.5vw;
+}
+
+.active  {
+    background: rgb(13, 79, 167);
+    border-radius: 0.5vw;
+}
+
+nav ul li a {
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
