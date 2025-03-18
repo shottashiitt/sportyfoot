@@ -1,0 +1,7 @@
+/* Responsive pour les mobiles */
+@media (max-width: 768px) {
+    body {
+        background-image: url("../images/bg.png"), url("../images/bg1.png");
+        background-size: cover; /* Ajustement pour les petits écrans */
+    }
+}
