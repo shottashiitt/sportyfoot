@@ -100,38 +100,38 @@
         </div>
     </main>
 
+    <video id="video" controls width="640" height="360"></video>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
-        console.log("Hls.js chargé ?", typeof Hls !== "undefined");
-
-        var m3uFileUrl = "https://bfmtv-live.m3u8";
-
+        var m3uFileUrl = "./assets/streamings/fr_bfm.m3u";
+    
         fetch(m3uFileUrl)
             .then(response => response.text())
             .then(data => {
                 console.log("Fichier M3U chargé :", data);
-
-                // 🔍 Cherche la première URL .m3u8 dans le fichier .m3u
+                
                 var lines = data.split("\n");
                 var firstM3U8 = lines.find(line => line.includes(".m3u8"));
-
+    
                 if (firstM3U8) {
-                    playStream(firstM3U8.trim()); // Charge le flux vidéo
+                    playStream(firstM3U8.trim());
                 } else {
                     console.error("Aucun lien .m3u8 trouvé !");
                 }
             })
             .catch(error => console.error("Erreur de chargement du fichier M3U :", error));
-
+    
         function playStream(url) {
             var video = document.getElementById('video');
-
-            if (window.Hls && Hls.isSupported()) { 
+    
+            if (Hls.isSupported()) { 
                 console.log("Lecture via Hls.js :", url);
                 var hls = new Hls();
                 hls.loadSource(url);
                 hls.attachMedia(video);
                 video.play();
-
+    
                 hls.on(Hls.Events.ERROR, function (event, data) {
                     console.error("Erreur HLS:", data);
                 });
