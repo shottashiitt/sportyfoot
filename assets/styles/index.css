@@ -79,6 +79,11 @@ main {
     border-radius: 0.7vw;
 }
 
+video {
+    display: block;
+    margin: 5vw auto;
+}
+
 @media (max-width: 768px) {
     body {
         background-size: cover; /* Ajustement pour les petits écrans */
