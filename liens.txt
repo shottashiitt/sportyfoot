@@ -1,0 +1,24 @@
+canal+ : https://stream-onsport.ru/blabla/1/11
+canal+ foot : https://stream-onsport.ru/blabla/1/12
+canal+ sport : https://stream-onsport.ru/blabla/1/13
+canal+ 360 : https://stream-onsport.ru/blabla/1/14
+Eurosport 1 : https://stream-onsport.ru/blabla/1/15
+Eurosport 2 : https://stream-onsport.ru/blabla/1/16
+RMC Sport : https://stream-onsport.ru/blabla/1/17
+RMC Sport 2 : https://stream-onsport.ru/blabla/1/18
+DAZN 1 : https://stream-onsport.ru/blabla/1/20
+DAZN 2 : https://stream-onsport.ru/blabla/1/21
+DAZN 3 : https://stream-onsport.ru/blabla/1/22
+Bein sport 1 : https://stream-onsport.ru/blabla/1/1
+Bein sport 2 : https://stream-onsport.ru/blabla/1/2
+Bein sport 3 : https://stream-onsport.ru/blabla/1/3
+Bein sport 4 : https://stream-onsport.ru/blabla/1/4
+Bein sport 5 : https://stream-onsport.ru/blabla/1/5
+Bein sport 6 : https://stream-onsport.ru/blabla/1/6
+Automoto : https://stream-onsport.ru/blabla/1/23
+TF1 : https://stream-onsport.ru/blabla/1/24
+TMC : https://stream-onsport.ru/blabla/1/25
+M6 : https://stream-onsport.ru/blabla/1/26
+W9 : https://stream-onsport.ru/blabla/1/27
+France 2 : https://stream-onsport.ru/blabla/1/28
+France 3 : https://stream-onsport.ru/blabla/1/29
