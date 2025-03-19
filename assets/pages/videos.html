@@ -14,11 +14,20 @@
     <link rel="preconnect" href="https://stream-onsport.ru"/>
 </head>
 <body>
-    <iframe src="https://stream-onsport.ru/blabla/1/1" webkitallowfullscreen="true" mozallowfullscreen="true" allow="autoplay" allowfullscreen="true" scrolling="no" frameborder="0" scrolling="yes" allowtransparency="true" width="100%" height="100%"></iframe>
 
-    <script>
-      window.open = function() { console.log("Popup bloqué"); return null; };
-    </script>
+<iframe sandbox="allow-scripts allow-same-origin"
+    src="https://stream-onsport.ru/blabla/1/1"
+    webkitallowfullscreen="true"
+    mozallowfullscreen="true"
+    allow="autoplay"
+    allowfullscreen="true"
+    scrolling="no"
+    frameborder="0"
+    allowtransparency="true"
+    width="100%"
+    height="100%">
+</iframe>
+
   </body>
 </html>
 
