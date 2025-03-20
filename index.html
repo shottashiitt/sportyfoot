@@ -17,129 +17,128 @@
 
     <main>
         <div class="channels">
-            <div class="category">
-                <a href="./assets/pages/videos.html">
-                    <img src="./assets/images/bein.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/1">
+                    <img src="./assets/images/channels/bein.png">
                 </a>
             </div>
 
-            <div class="category">
-                <a href="">
-                    <img src="./assets/images/bein2.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/2">
+                    <img src="./assets/images/channels/bein2.png">
                 </a>
             </div>
 
-            <div class="category">
-                <a href="">
-                    <img src="./assets/images/bein3.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/3">
+                    <img src="./assets/images/channels/bein3.png">
                 </a>
             </div>
 
-            <div class="category">
-                <a href="">
-                    <img src="./assets/images/canal.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/4">
+                    <img src="./assets/images/channels/bein4.png">
                 </a>
             </div>
 
-            <div class="category">
-                <a href="">
-                    <img src="./assets/images/canal-foot.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/5">
+                    <img src="./assets/images/channels/bein5.png">
                 </a>
             </div>
 
-            <div class="category">
-                <a href="">
-                    <img src="./assets/images/canal360.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/6">
+                    <img src="./assets/images/channels/bein6.png">
                 </a>
             </div>
 
-            <div class="category">
-                <a href="">
-                    <img src="./assets/images/rmc.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/11">
+                    <img src="./assets/images/channels/canal.png">
                 </a>
             </div>
 
-            <div class="category">
-                <a href="">
-                    <img src="./assets/images/rmc2.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/12">
+                    <img src="./assets/images/channels/canal-foot.png">
                 </a>
             </div>
 
-            <div class="category">
-                <a href="">
-                    <img src="./assets/images/eurosport.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/13">
+                    <img src="./assets/images/channels/canal-sport.png">
                 </a>
             </div>
 
-            <div class="category">
-                <a href="">
-                    <img src="./assets/images/eurosport2.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/14">
+                    <img src="./assets/images/channels/canal360.png">
+                </a>
+            </div>
+
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/17">
+                    <img src="./assets/images/channels/rmc.png">
+                </a>
+            </div>
+
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/18">
+                    <img src="./assets/images/channels/rmc2.png">
+                </a>
+            </div>
+
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/15">
+                    <img src="./assets/images/channels/eurosport.png">
+                </a>
+            </div>
+
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/16">
+                    <img src="./assets/images/channels/eurosport2.png">
                 </a>
             </div>
 
             
-            <div class="category">
-                <a href="">
-                    <img src="./assets/images/dazn.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/20">
+                    <img src="./assets/images/channels/dazn.png">
                 </a>
             </div>
 
-            <div class="category">
-                <a href="">
-                    <img src="./assets/images/dazn2.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/21">
+                    <img src="./assets/images/channels/dazn2.png">
                 </a>
             </div>
 
-            <div class="category">
-                <a href="">
-                    <img src="./assets/images/dazn3.png">
+            <div class="channel">
+                <a data-src="https://stream-onsport.ru/blabla/1/22">
+                    <img src="./assets/images/channels/dazn3.png">
                 </a>
             </div>
         </div>
     </main>
-    
-    <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
     <script>
-        var m3uFileUrl = "./assets/streamings/dazn_combat-iptvcat.com.m3u";
+        document.addEventListener("DOMContentLoaded", function() {
+            let channels = document.querySelectorAll(".channel a");
     
-        fetch(m3uFileUrl)
-            .then(response => response.text())
-            .then(data => {
-                console.log("Fichier M3U chargé :", data);
-                
-                var lines = data.split("\n");
-                var firstM3U8 = lines.find(line => line.includes(".m3u8"));
+            channels.forEach(channel => {
+                channel.addEventListener("click", function(event) {
+                    event.preventDefault();
     
-                if (firstM3U8) {
-                    playStream(firstM3U8.trim());
-                } else {
-                    console.error("Aucun lien .m3u8 trouvé !");
-                }
-            })
-            .catch(error => console.error("Erreur de chargement du fichier M3U :", error));
-    
-        function playStream(url) {
-            var video = document.getElementById('video');
-    
-            if (Hls.isSupported()) { 
-                console.log("Lecture via Hls.js :", url);
-                var hls = new Hls();
-                hls.loadSource(url);
-                hls.attachMedia(video);
-                video.play();
-    
-                hls.on(Hls.Events.ERROR, function (event, data) {
-                    console.error("Erreur HLS:", data);
+                    let streamUrl = this.getAttribute("data-src"); 
+                    if (streamUrl) {
+                        localStorage.setItem("selectedStream", streamUrl); 
+                        window.location.href = "./assets/pages/videos.html";
+                    }
                 });
-            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                console.log("Lecture native supportée");
-                video.src = url;
-                video.play();
-            } else {
-                console.error("Le navigateur ne supporte pas HLS !");
-            }
-        }
-    </script> -->
+            });
+        });
+    </script>
     
 </body>
 </html>

@@ -28,6 +28,17 @@
     height="100%">
 </iframe>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      let player = document.querySelector("iframe");
+      let savedStream = localStorage.getItem("selectedStream"); // Récupère l'URL stockée
+
+      if (savedStream) {
+          player.src = savedStream; // Met à jour le src de l'iframe
+      }
+  });
+</script>
+
   </body>
 </html>
 
