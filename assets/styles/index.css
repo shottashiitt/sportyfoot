@@ -1,39 +1,57 @@
 * {	
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
     width: 12px;
-  }
+}
   
-  ::-webkit-scrollbar-thumb {
-    background: rgb(25 30 40);
+::-webkit-scrollbar-thumb {
+    background: rgb(25, 30, 40);
     border-radius: 0.2vw;
-  }
+}
   
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: transparent;
     border-radius: 6px;
-  }
-
+}
 
 body {
     background-color: rgb(20, 20, 20);
     background-image: url("../images/bg.png"), url("../images/bg1.png");
     background-repeat: repeat;
     background-attachment: fixed;
-    background-size: 100%;        
+    background-size: 100%;
 }
 
-header img {
-    width: 20vw;
+header {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("https://dicodusport.fr/blog/wp-content/uploads/2025/03/Phase-finale-Ligue-des-Champions-Le-tableau-complet.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5vw 2vw;
+}
+
+header a img {
+    width: 30vw;
     display: block;
-    margin: 5vw auto;
+    margin: auto;
     transition: all 0.5s ease-in-out;
 }
 
-header img:hover {
+header a img:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -41,18 +59,26 @@ header img:hover {
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+header h1, main h2 {
+    color: white;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-weight: 600;
+    text-align: center;
+    margin: 2vw auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .channels {
     width: 60%;
-    height: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2vw;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 5vw;
     margin: 0 auto;
     align-items: center;
     justify-items: center;
-    place-items: center; 
 }
 
 .channel {
@@ -60,8 +86,8 @@ main {
     height: 10vw;
     border-radius: 0.5vw;
     background: transparent;
-    display: flex;          /* Active le mode flexbox */
-    justify-content: center; /* Centre horizontalement */
+    display: flex;
+    justify-content: center;
     align-items: center;  
     transition: all 0.2s ease-in-out;
 }
@@ -84,13 +110,31 @@ video {
     margin: 5vw auto;
 }
 
+footer {
+    color: white;
+    text-align: center;
+    margin: 2vw auto;
+    margin-top: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1024px) {
+    header a img {
+        width: 40vw;
+    }
+}
+
 @media (max-width: 768px) {
     body {
-        background-size: cover; /* Ajustement pour les petits écrans */
+        background-size: cover;
     }
 
-    header img {
-        width: 40vw;
+    header {
+        background-position: top;
+    }
+
+    header a img {
+        width: 50vw;
     }
 
     .channels {
@@ -102,5 +146,19 @@ video {
     .channel {
         width: 22vw;
         height: 22vw;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    
+    header a img {
+        width: 60vw;
+    }
+
+    .channels {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
