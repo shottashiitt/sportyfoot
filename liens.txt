@@ -1,26 +1,55 @@
-canal+ : https://stream-onsport.ru/blabla/1/11
-canal+ foot : https://stream-onsport.ru/blabla/1/12
-canal+ sport : https://stream-onsport.ru/blabla/1/13
-canal+ 360 : https://stream-onsport.ru/blabla/1/14
-Eurosport 1 : https://stream-onsport.ru/blabla/1/15
-Eurosport 2 : https://stream-onsport.ru/blabla/1/16
-RMC Sport : https://stream-onsport.ru/blabla/1/17
-RMC Sport 2 : https://stream-onsport.ru/blabla/1/18
-DAZN 1 : https://stream-onsport.ru/blabla/1/20
-DAZN 2 : https://stream-onsport.ru/blabla/1/21
-DAZN 3 : https://stream-onsport.ru/blabla/1/22
-Bein sport 1 : https://stream-onsport.ru/blabla/1/1
-Bein sport 2 : https://stream-onsport.ru/blabla/1/2
-Bein sport 3 : https://stream-onsport.ru/blabla/1/3
-Bein sport 4 : https://stream-onsport.ru/blabla/1/4
-Bein sport 5 : https://stream-onsport.ru/blabla/1/5
-Bein sport 6 : https://stream-onsport.ru/blabla/1/6
+canal+ : https://streamysport.ru/blabla/1/11
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/106.m3u8
+
+canal+ foot : https://streamysport.ru/blabla/1/12
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/88.m3u8
+
+canal+ sport : https://streamysport.ru/blabla/1/13
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/54.m3u8
+
+canal+ 360 : https://streamysport.ru/blabla/1/14 
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/58.m3u8
+
+Eurosport 1 : https://streamysport.ru/blabla/1/15
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/59.m3u8
+
+Eurosport 2 : https://streamysport.ru/blabla/1/16 
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/60.m3u8
+
+RMC Sport : https://streamysport.ru/blabla/1/17
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/33.m3u8
+
+RMC Sport 2 : https://streamysport.ru/blabla/1/18
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/40.m3u8
+
+DAZN 1 : https://streamysport.ru/blabla/1/20
+https://witv.store/player/playerjs/witv-player.php?id=150
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/150.m3u8
+
+DAZN 2 : https://streamysport.ru/blabla/1/21
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/151.m3u8
+
+DAZN 3 : https://streamysport.ru/blabla/1/22
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/160.m3u8
+
+Bein sport 1 : https://streamysport.ru/blabla/1/1
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/44.m3u8
+
+Bein sport 2 : https://streamysport.ru/blabla/1/2
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/49.m3u8
+
+Bein sport 3 : https://streamysport.ru/blabla/1/3
+https://play.witv.store/live/2719C8919B250671368654F53F9595F1/50.m3u8
+
+Bein sport 4 : https://streamysport.ru/blabla/1/4
+Bein sport 5 : https://streamysport.ru/blabla/1/5
+Bein sport 6 : https://streamysport.ru/blabla/1/6
 
 
-Automoto : https://stream-onsport.ru/blabla/1/23
-TF1 : https://stream-onsport.ru/blabla/1/24
-TMC : https://stream-onsport.ru/blabla/1/25
-M6 : https://stream-onsport.ru/blabla/1/26
-W9 : https://stream-onsport.ru/blabla/1/27
-France 2 : https://stream-onsport.ru/blabla/1/28
-France 3 : https://stream-onsport.ru/blabla/1/29
+Automoto : https://streamysport.ru/blabla/1/23
+TF1 : https://streamysport.ru/blabla/1/24
+TMC : https://streamysport.ru/blabla/1/25
+M6 : https://streamysport.ru/blabla/1/26
+W9 : https://streamysport.ru/blabla/1/27
+France 2 : https://streamysport.ru/blabla/1/28
+France 3 : https://streamysport.ru/blabla/1/29
